@@ -1,0 +1,36 @@
+/*buttons*/
+.button {
+	font-family: arial, sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 1.2;
+	text-transform: uppercase;
+	border: none;
+}
+.link{
+	font-size: 35px;
+	line-height: 37px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 600;
+	color: #262524;
+	text-align: center;
+	display: inline-block;
+	position: relative;
+	background: rgb(229,230,123);
+	background: -moz-linear-gradient(left, rgba(229,230,123,1) 15%, rgba(201,198,76,1) 100%);
+	background: -webkit-linear-gradient(left, rgba(229,230,123,1) 15%,rgba(201,198,76,1) 100%);
+	background: linear-gradient(to right, rgba(229,230,123,1) 15%,rgba(201,198,76,1) 100%);
+	float: right;
+	text-decoration: none;
+	margin: 0 -20px 0 0;
+	padding: 13px 14px 14px;
+	&:before{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: -18px;
+		background: url(../img/decor-3.png) no-repeat;
+		height: 64px;
+		width: 19px;
+	}
+}

@@ -1,0 +1,49 @@
+.block-locations{
+	background: url(../img/bg-2.png) no-repeat;
+	padding: 44px 0 39px 0;
+	.title{
+		display: block;
+	}
+	&:last-child{
+		.list-locations{
+			&:after{
+				display: none;
+			}
+		}
+	}
+	.list-locations{
+		width: 33%;
+		float: left;
+		list-style: none;
+		padding: 0 37px;
+		margin: 0;
+		font-family: 'Oswald', sans-serif;
+		position: relative;
+		&:after{
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 37px;
+			height: 105px;
+			width: 1px;
+			background: #c9c8c8;
+			&:last-child{
+				display: none;
+			}
+		}
+		li{
+			background: url(../img/img-5.png) no-repeat;
+			position: relative;
+			padding: 0 0 0 40px;
+			margin: 0 0 27px;
+			font-size: 25px;
+			span{
+				position: absolute;
+				top: 39%;
+				left: 16px;
+				transform: translate(-50%,-50%);
+				font-size: 15px;
+			}
+		}
+	}
+}

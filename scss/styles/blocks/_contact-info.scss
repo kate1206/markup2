@@ -1,0 +1,22 @@
+/*contact info*/
+.contact-info {
+	text-align: right;
+	margin-bottom: 5px;
+	padding: 0 0 0 21px;
+	position: relative;
+	&-phone {
+		margin: 0 0 0 10px;
+		color: #2c2c2c;
+		font-size: 36px;
+		line-height: 1.2;
+		display:inline-block;
+		vertical-align:middle;
+		text-decoration: none;
+		font-family: 'Oswald', sans-serif;
+		letter-spacing: 2px;
+		&:hover,
+		&:focus {
+			color: #3d6c58;
+		}
+	}
+}

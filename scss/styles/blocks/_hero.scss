@@ -1,0 +1,41 @@
+/*hero*/
+.hero {
+	position: relative;
+	padding: 0 0 10px;
+	max-width: 1024px;
+/*	>.row{
+		margin-right: 0;
+		margin-left: 0;
+		max-width: 1024px;
+	}*/
+	img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	.border{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 7px;
+		background: #d1eefc;
+		&:after{
+			top: 100%;
+			right: 147px;   
+			border: solid transparent;
+			content: " "; 
+			height: 0;
+			width: 0;
+			position: absolute;
+			pointer-events: none;
+			border-color: rgba(209, 238, 252, 0);
+			border-top-color: #d1eefc; 
+			border-width: 30px;
+			margin-left: -30px;
+		}
+	}
+	/*@include breakpoint(small down) {
+
+	}*/
+}

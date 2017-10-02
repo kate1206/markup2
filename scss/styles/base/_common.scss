@@ -1,0 +1,53 @@
+/*global*/
+body {
+	font-size: 17px;
+}
+
+.wrapper {
+	overflow: hidden;
+}
+.title{
+	font-size: 34px;
+	line-height: 37px;
+	display: inline-block;
+	color: #262524;
+	font-family: 'Sorts Mill Goudy', serif;
+	margin: 0 0 16px;
+}
+h1 {
+	color: #095eaa;
+	font-family: 'Sorts Mill Goudy', serif;
+	margin: 0 0 12px;
+	font-weight: 700;
+	font-size: 28px;
+}
+
+h2 {
+	color: #262524;
+	margin: 0 0 17px;
+	font-weight: 700;
+	font-style: italic;
+	font-size: 23px;
+	font-family: 'Sorts Mill Goudy', serif;
+}
+
+.link-more {
+	font-size: 14px;
+	font-family: times, serif;
+	font-weight: 700;
+}
+
+@include breakpoint(small down) {
+	body {
+		font-size: 14px;
+	}
+	h1 {
+		margin: 0 0 14px;
+	}
+	h2 {
+		margin: 0 0 9px;
+	}
+	p {
+		margin: 0 0 15px;
+	}
+}

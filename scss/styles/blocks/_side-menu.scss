@@ -1,0 +1,24 @@
+.side{
+	background: #e1f4fd;
+	border-radius: 20px;
+	font-family: 'Oswald', sans-serif;
+	.side-title{
+		font-size: 25px;
+		line-height: 27px;
+		display: block;
+		color: #2d2d2d;
+		border-bottom: 2px solid #d1eefc;
+	}
+}
+.side-menu{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	li{
+		border-bottom: 1px solid red;
+		a{
+			display: block;
+			text-decoration: none;
+		}
+	}
+}

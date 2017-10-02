@@ -1,0 +1,31 @@
+/*header*/
+.header {
+	position: relative;
+	z-index: 99;
+	padding-top: 37px;
+	>.row{
+		.column{
+			padding: 0;
+		}
+	}
+	@include breakpoint(medium down) {
+		padding-top: 25px;
+		padding-bottom: 32px;
+	}
+	@include breakpoint(small down) {
+		padding-top: 15px;
+		padding-bottom: 25px;
+		.top-bar {
+			.top-bar-left,
+			.top-bar-right {
+				width: auto;
+			}
+			.top-bar-left {
+				float: left;
+			}
+			.top-bar-right {
+				float: right;
+			}
+		}
+	}
+}

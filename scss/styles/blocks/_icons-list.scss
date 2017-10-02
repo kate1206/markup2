@@ -1,0 +1,18 @@
+/*icons list*/
+.icons-list {
+	margin: 0 0 10px;
+	list-style: none;
+	font-size: 0;
+	line-height: 0;
+	li {
+		display:inline-block;
+		vertical-align:middle;
+		margin: 0 11px 0 0;
+	}
+	@include breakpoint(small down) {
+		text-align: center;
+		li {
+			margin: 0 5px;
+		}
+	}
+}

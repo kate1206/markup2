@@ -1,0 +1,46 @@
+/*content block*/
+.content-block {
+	padding: 40px 0 24px;
+	border-bottom: 37px solid #095eaa;
+	&.interior{
+		margin: -162px 0 0 0;
+		>.row{
+			.column{
+				padding: 0;
+			}
+		}
+	}
+	>.row{
+		.column{
+			padding: 0 27px;
+		}
+	}
+	.content-right{
+		background: #095eaa;
+		border-radius: 15px; 
+		float: right;
+		padding: 26px 20px;
+		width: 220px;
+		.title{
+			display: block;
+			font-family: 'Sorts Mill Goudy', serif;
+			font-size: 27px;
+			line-height: 32px;
+			color: #fff;
+			text-align: center;
+			margin: 0 0 14px;
+		}
+		&.interior{
+			margin: 130px 0 0 0;
+		}
+	}
+	@include breakpoint(medium down) {
+		padding: 39px 44px 44px;
+		h2 {
+			margin: 0 0 9px;
+		}
+	}
+	@include breakpoint(small down) {
+		padding: 19px 0 23px;
+	}
+}

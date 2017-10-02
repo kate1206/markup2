@@ -1,0 +1,73 @@
+.contact-form {
+	background: #e1f4fd;
+	border-top: 7px solid #d1eefc;
+	border-bottom: 37px solid #095eaa;
+	padding: 63px 0 72px;
+	text-align: center;
+	.form{
+		overflow: hidden;
+		.col{
+			float: left;
+			width: 38.5%;
+			padding: 0 20px 0 0;
+			&:last-child{
+				width: 22.3%;
+			}
+		}
+		.button{
+			width: 100%;
+			font-size: 32px;
+			text-align: center;
+			background: #01816a;
+			font-family: 'Oswald', sans-serif;
+			text-decoration: underline;
+			height: 192px;
+		}
+		input,
+		textarea {
+			border: 1px solid #d4d8da;
+			height: 60px;
+			padding: 0 12px;
+			color: #000;
+			margin: 0;
+			font-size: 18px;
+			box-shadow: none;
+			font-family: Arial, Helvetica, sans-serif;
+			margin: 0 0 5px;
+			color: #504f4f;
+			&:focus {
+				box-shadow: none;
+				border: 1px solid #d4d8da;
+			}
+			&::-webkit-input-placeholder {
+				color: #504f4f;
+			}
+
+			&::-moz-placeholder {
+				color:#504f4f;
+			}
+
+			&:-ms-input-placeholder {
+				color: #504f4f;
+			}
+		}
+		textarea{
+			height: 127px;
+		}
+	}
+	.title-label{
+		display: block;
+		font-size: 14px;
+		color: #373737;
+		text-align: left;
+	}
+	@include breakpoint(medium down) {
+		padding: 0;
+		margin: 0 auto;
+		&-label {
+			float: none;
+			text-align: center;
+			margin: 0 0 13px;
+		}
+	}
+}

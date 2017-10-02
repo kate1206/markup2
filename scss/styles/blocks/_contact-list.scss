@@ -1,0 +1,43 @@
+/*contact list*/
+.contact-list {
+	margin: 0 0 20px;
+	list-style: none;
+	overflow: hidden;
+	li {
+		padding: 0 20px 0 0;
+		position: relative;
+		float: left;
+		&:after {
+			width: 6px;
+			height: 6px;
+			background: #b6c74d;
+			border-radius: 50%;
+			position:absolute;
+			top:10px;
+			left:-13px;
+			content: '';
+		}
+	}
+	a {
+		color: #000;
+		text-decoration: none;
+		&:hover,
+		&:focus {
+			text-decoration: underline;
+		}
+	}
+	@include breakpoint(small down) {
+		margin: 0 0 17px;
+		font-size: 16px;
+		line-height: 1.5;
+		li {
+			float: none;
+			display: inline;
+			padding: 0 11px 0 0;
+			&:after {
+				top: 7px;
+				left: -11px;
+			}
+		}
+	}
+}

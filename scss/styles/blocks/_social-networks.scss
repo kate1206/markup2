@@ -1,0 +1,17 @@
+.social-networks{
+	list-style: none;
+	padding: 0 0 31px;
+	margin: 0;
+	li{
+		display: inline-block;
+		vertical-align: top;
+		padding: 0 2px 0 0;
+		a{
+			display: block;
+			transition: all .25s;
+			&:hover{
+				opacity: 0.8;
+			}
+		}
+	}
+}
